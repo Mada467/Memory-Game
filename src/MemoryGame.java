@@ -94,6 +94,8 @@ public class MemoryGame extends JFrame {
             pairsFound++;
             if (pairsFound == imageNames.length) {
                 JOptionPane.showMessageDialog(this, "Felicitări! Ai găsit toate perechile!");
+                dispose();
+                System.exit(0);
             }
         } else {
             selectedCard1.hideAgain();
